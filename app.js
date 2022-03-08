@@ -15,6 +15,37 @@ const lossesEl = document.getElementById('losses');
 const winsEl = document.getElementById('wins');
 
 // let state
+let correctGuesses = 0;
+let totalGuesses = 0;
+
+
+//set event listeners
+cupButtonOne.addEventListener('click', () => {
+
+});
+
+cupButtonTwo.addEventListener('click', () => {
+
+});
+
+cupButtonThree.addEventListener('click', () => {
+
+});
+
+//create function with random hiding spot
+function getRandomHidingSpot() {
+  const hidingPlaces = [
+    'one',
+    'two',
+    'three'
+  ];
+
+  const index = Math.floor(Math.random() * hidingPlaces.length);
+  return hidingPlaces[index];
+}
+
+//create function that handles guesses
+
 
 // set event listeners 
   // get user input
