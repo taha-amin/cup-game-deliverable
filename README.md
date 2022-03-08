@@ -14,12 +14,13 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
 1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
-Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+PLAN
+1. Retrieve pictures of cups and cup with ball
+2. Write out HTML template
+  - h1 header for title - (GUESS WHERE THE BALL IS?)
+  - 3 images (2 without ball and 1 with ball)
+  - 3 btns underneath the images
+  - Show the user their:
+    - total guesses
+    - wins
+    - losses
