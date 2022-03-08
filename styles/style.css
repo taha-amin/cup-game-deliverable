@@ -89,3 +89,22 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.hiding-places {
+    height: 300px;
+    display: flex;
+}
+
+.hiding-place {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cup-image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
