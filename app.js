@@ -52,6 +52,7 @@ function getRandomHidingSpot() {
 
 //create function that handles guesses
 function handleGuess(userGuess, correctSpot) {
+  
   //First remove the ball cup from hiding places
     cupOne.classList.remove('ball-cup');
     cupTwo.classList.remove('ball-cup');
