@@ -63,8 +63,6 @@ function handleGuess(userGuess, correctSpot) {
     const correctCupEl = document.getElementById(`cup-${correctSpot}`);
     correctCupEl.classList.add('ball-cup');
 
-    
-
   //if statement: if user is correct, increment correct gueses
     if (userGuess === correctSpot) {
         correctGuesses++;

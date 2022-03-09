@@ -114,6 +114,4 @@ footer {
 .ball-cup::after {
     content: url('../assets/cupInBall.png');
     position: absolute;
-    width: 150px;
-    margin-bottom: 15px;
 }
