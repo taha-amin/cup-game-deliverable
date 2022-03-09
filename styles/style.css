@@ -91,6 +91,10 @@ footer {
     box-shadow: var(--shadow);
 }
 
+img {
+    height: 170px;
+}
+
 .hiding-places {
     display: flex;
     flex-direction: row;
@@ -114,5 +118,5 @@ footer {
 .ball-cup::after {
     content: url('../assets/cupInBall.png');
     position: absolute;
-    margin: 0px 0px 15px;
+    padding-bottom: 15px;
 }
