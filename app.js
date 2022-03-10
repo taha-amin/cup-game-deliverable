@@ -58,7 +58,7 @@ function handleGuess(userGuess, correctSpot) {
     cupTwo.classList.remove('ball-cup');
     cupThree.classList.remove('ball-cup');
 
-  //increment guesses
+  //increment guesses guesses
     totalGuesses++;
 
     const correctCupEl = document.getElementById(`cup-${correctSpot}`);
