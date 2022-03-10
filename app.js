@@ -34,7 +34,7 @@ cupButtonTwo.addEventListener('click', () => {
 
 cupButtonThree.addEventListener('click', () => {
     let correctSpot = getRandomHidingSpot();
-
+    
     handleGuess('three', correctSpot);
 });
 
@@ -50,21 +50,27 @@ function getRandomHidingSpot() {
     return hidingPlaces[index];
 }
 
+function styleReset() {
+
+    //function resets style according to rubric
+    cupOne.classList.remove('ball-cup');
+    cupTwo.classList.remove('ball-cup');
+    cupThree.classList.remove('ball-cup');
+}
+
 //create function that handles guesses
 function handleGuess(userGuess, correctSpot) {
   
   //First remove the ball cup from hiding places
-    cupOne.classList.remove('ball-cup');
-    cupTwo.classList.remove('ball-cup');
-    cupThree.classList.remove('ball-cup');
+    styleReset();
 
-  //increment guesses guesses
+  //increment guesses
     totalGuesses++;
 
     const correctCupEl = document.getElementById(`cup-${correctSpot}`);
     correctCupEl.classList.add('ball-cup');
 
-  //if statement: if user is correct, increment correct gueses
+  //if statement: if user is correct, increment correct guesses
     if (userGuess === correctSpot) {
         correctGuesses++;
     }
